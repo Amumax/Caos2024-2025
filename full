@@ -1,0 +1,11 @@
+# 1 раздел
+
+g++ -v test.cpp
+g++ -S test.cpp
+g++ -c test.cpp
+objdump -d test.o
+
+ld cin_cout.o /lib/x86_64-linux-gnu/libstdc++.so.6 /lib/x86_64-linux-gnu/libc.so.6 /usr/lib/gcc/x86_64-linux-gnu/13/crtend.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbegin.o -I /lib64/ld-linux-x86-64.so.2 
+
+g++ -static cin_cout.cpp 
+ldd a.out
