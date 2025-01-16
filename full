@@ -9,3 +9,15 @@ ld cin_cout.o /lib/x86_64-linux-gnu/libstdc++.so.6 /lib/x86_64-linux-gnu/libc.so
 
 g++ -static cin_cout.cpp 
 ldd a.out
+
+cd /lib/x86_64-linux-gnu/
+sudo mv libstdc++.so.6 hahah/
+sudo mv libstdc++.so.6.0.30 hahah/
+LD_LIBRARY_PATH=/lib/x86_64-linux-gnu/hahah ./a.out 
+
+
+g++ -shared mylib.cpp -o liblovenumber.so
+g++ test.cpp -llovenumber -L.
+LD_LIBRARY_PATH=. ./a.out
+g++ test.cpp -llovenumber -L. -Wl,-rpath,/home/lidochek/Caos2024-2025/2_myfunclib
+ltrace ./a.out
