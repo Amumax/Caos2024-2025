@@ -1,0 +1,28 @@
+LD_LIBRARY_PATH=
+в папке /lib/x86_64-linux-gnu/ лежат все либы
+htop чтобы смотреть процессы
+для чего rpath и Wl
+EXEC в elf
+g++ test.cpp -llovenumber -L. -Wl,-rpath,/home/lidochek/Caos2024-2025/2_myfunclib
+nm -C
+g++ -g -D_GLIBCXX_DEBUG test.cpp ∖ -Wl,-rpath,/address/of/folder/with/libstdc++6-10-dbg
+(gdb) list
+(gdb) info break
+file (coredump)
+gdb ./a.out /var/lib/apport/coredump/core._home_marypan_a_out.1000.23fe199d-e027-463c-befa-2749f81b8486.18993.1279394
+pgrep $a.out
+sudo gdb -p num_of_process
+POSIX (Portable Operating System Interface) 
+man 1 -- обычные функции, man 2 -- сисколы, man 3 -- библотечные
+lseek
+_exit()
+getdents
+df -T -h
+chown
+chgrp
+lsattr
+chattr
+mkfifo
+lsof
+lscpu
+lsusb
