@@ -1,0 +1,2 @@
+setrlimit — сискол, который может увеличить стек
+int setrlimit(int resource, const struct rlimit* rlim)
