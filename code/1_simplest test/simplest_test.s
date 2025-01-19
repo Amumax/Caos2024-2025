@@ -74,7 +74,7 @@ _GLOBAL__sub_I_main:
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
 	movl	$65535, %esi
-	movl	$1, %ediz
+	movl	$1, %edi
 	call	_Z41__static_initialization_and_destruction_0ii
 	popq	%rbp
 	.cfi_def_cfa 7, 8
