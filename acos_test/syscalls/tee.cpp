@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
     int bytes_read;
     while ((bytes_read = read(0, buf, sizeof(buf))) > 0) {
         if (bytes_read == -1) {
-            write(2, "Error!", 6);
+            perror("`error");
             exit(1);
         }
        write(1, buf, bytes_read);
